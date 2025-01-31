@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff; /* Jasnoniebieskie tło */
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: gold;
+    text-align: center;
+    padding: 50px 0;
+}
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+h2 {
+    text-align: center;
+    color: #16213e;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+.project h3 {
+    margin: 10px 0;
+}
+.project p {
+    font-size: 0.9em;
+    color: #444;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #16213e;
+    color: gold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: gold;
+    color: #16213e;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #16213e;
+    color: gold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background: gold;
+    color: #16213e;
+}
