@@ -3,64 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Data Science Portfolio</title>
+    <title>Piotr Pięciak - Data Science Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- Baner -->
     <header class="banner">
         <img src="images/banner.jpg" alt="Banner">
         <div class="banner-text">
             <h1 class="left-text">Piotr Pięciak</h1>
-            <h2 class="right-text">Data Science | Machine Learning | AI Enthusiast</h2>
+            <h2 class="right-text">Data Science Enthusiast</h2>
         </div>
     </header>
+
+    <!-- Pasek powitalny -->
     <div class="welcome-bar">
-        <h2>Welcome to my Data Science Portfolio</h2>
+        <h2>Welcome to my Data Science Project</h2>
     </div>
 
-    <!-- Sekcja o mnie -->
-    <section class="about">
-        <img src="images/profile_photo.jpg" alt="Profile Photo" class="profile-pic">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I am an aspiring Data Scientist and Machine Learning Engineer with a strong analytical background and hands-on experience in statistical analysis, process optimization, and problem-solving. After completing an intensive Data Science & Machine Learning course, I am actively building real-world projects, applying Python and machine learning to business challenges.<br><br>
-
-                For the past 15 years, I have worked in automotive and electronics manufacturing as a Supplier Quality Engineer and Quality Leader/Supervisor, specializing in data-driven decision-making, supplier development, and new product introduction. My experience includes working with global teams, leading negotiations, and implementing process improvements based on statistical analysis.<br><br>
-
-                I have also spent 5 years collaborating directly with customers, ensuring flawless production start and quality assurance. I translated their expectations into scalable production processes, led on-site supplier visits, technical discussions, and worked closely with production teams to meet quality and efficiency targets.<br><br>
-            </p>
-            <h2>What I Bring to Data Science</h2>
-            <h2>Technical Skills</h2>
-        </div>
-    </section>
-
-    <!-- Sekcja projektów -->
-    <section class="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <img src="images/project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Brief description of the project.</p>
-                <a href="https://github.com/yourgithub/project1" target="_blank">View on GitHub</a>
+    <!-- Sekcja główna -->
+    <main>
+        <section class="about">
+            <div class="profile">
+                <img src="images/profile.jpg" alt="Profile Photo">
             </div>
-            <div class="project-item">
-                <img src="images/project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Brief description of the project.</p>
-                <a href="https://github.com/yourgithub/project2" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm passionate about data science, machine learning, and AI...</p>
 
-    <!-- Kontakt -->
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-    </section>
+                <h2>What I bring to Data Science</h2>
+                <p>My experience in various fields allows me to tackle complex data problems...</p>
+
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Pandas & NumPy</li>
+                    <li>TensorFlow & Scikit-learn</li>
+                    <li>Data Visualization (Matplotlib, Seaborn)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projekty -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-container">
+                <div class="project">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <p>Project 1 Description</p>
+                </div>
+                <div class="project">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <p>Project 2 Description</p>
+                </div>
+                <div class="project">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <p>Project 3 Description</p>
+                </div>
+                <div class="project">
+                    <img src="images/project4.jpg" alt="Project 4">
+                    <p>Project 4 Description</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
 </body>
 </html>
 
