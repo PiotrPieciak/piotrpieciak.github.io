@@ -29,6 +29,11 @@ body {
     font-size: 1.2em;
 }
 
+.banner img {
+    width: 100%; /* Banner rozciąga się na całą szerokość */
+    height: auto; /* Automatyczna wysokość */
+}
+
 /* Sections */
 .container {
     width: 80%;
