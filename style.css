@@ -1,7 +1,7 @@
 /* Globalne style */
 body {
     font-family: Arial, sans-serif;
-    background: url('images/Background.jpg') no-repeat center center fixed;
+    background: url('images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
     margin: 0;
