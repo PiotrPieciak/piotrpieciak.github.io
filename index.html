@@ -3,41 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Data Science</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        a {
-            display: block;
-            margin: 10px;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>My Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Data Science Portfolio</h1>
-        <p>Here you will find my projects, data visualizations, and machine learning models.</p>
-        <a href="https://github.com/PiotrPieciak/">Visit My GitHub</a>
-    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="banner">
+            <h1>My Data Science Portfolio</h1>
+            <p>Machine Learning | AI | Data Analysis</p>
+        </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about">
+        <div class="container">
+            <img src="images/profile.jpg" alt="My Photo" class="profile-pic">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Aspiring Data Scientist with a background in statistical analysis, machine learning, and process optimization...</p>
+                <p>Technologies: Python, SQL, TensorFlow, Scikit-learn, Pandas, Matplotlib...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRENT PROJECTS -->
+    <section id="current-projects">
+        <div class="container">
+            <h2>Current Projects</h2>
+            <ul>
+                <li>📊 <strong>Customer Churn Prediction</strong> – Predicting customer churn using ML</li>
+                <li>🏭 <strong>Defect Detection in Manufacturing</strong> – Analyzing images for product defects</li>
+                <li>🧠 <strong>Deep Learning for NLP</strong> – Sentiment analysis model</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROJECTS PORTFOLIO -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Projects Portfolio</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>Machine learning model predicting customer churn using Python, Scikit-learn, and logistic regression.</p>
+                    <a href="#" class="btn">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Defect Detection</h3>
+                    <p>Deep learning model analyzing images to detect manufacturing defects.</p>
+                    <a href="#" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
