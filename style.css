@@ -1,116 +1,91 @@
-/* General Styles */
+/* Globalne style */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e0f7ff; /* Jasnoniebieskie tło */
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    color: #222;
-    background-image: url("images/Background.jpg"); /* Ścieżka do pliku */
-    background-size: cover; /* Dopasowanie do ekranu */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Ustawienie tła na stałe */
 }
 
-/* Banner */
+/* Baner */
+header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
 .banner {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: gold;
-    text-align: center;
-    padding: 50px 0;
-    width: 100%; /* Banner rozciąga się na całą szerokość */
-    height: auto; /* Automatyczna wysokość */
-}
-.banner h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-.banner p {
-    font-size: 1.2em;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
 }
 
-.banner img {
-    width: 100%; /* Banner rozciąga się na całą szerokość */
-    height: auto; /* Automatyczna wysokość */
+h1 {
+    font-size: 2em;
+    color: #FFD700;
 }
 
-/* Sections */
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-}
-h2 {
-    text-align: center;
-    color: #16213e;
-}
-
-/* About Section */
-#about {
+/* Sekcja "O mnie" */
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    padding: 40px;
 }
+
 .profile-pic {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 3px solid #FFD700;
     margin-right: 20px;
 }
 
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    text-align: center;
-}
-.project img {
-    width: 100%;
-    border-radius: 10px;
-}
-.project h3 {
-    margin: 10px 0;
-}
-.project p {
-    font-size: 0.9em;
-    color: #444;
-}
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #16213e;
-    color: gold;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.btn:hover {
-    background: gold;
-    color: #16213e;
+.about-text {
+    max-width: 600px;
 }
 
-/* Contact Form */
-form {
+/* Projekty */
+.projects {
+    text-align: center;
+    padding: 40px;
+}
+
+.project-list {
     display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
+    justify-content: center;
+    gap: 20px;
 }
-input, textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
+
+.project-item {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.project-item img {
+    width: 100%;
     border-radius: 5px;
 }
-button {
-    background: #16213e;
-    color: gold;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
+
+.project-item h3 {
+    color: #FFD700;
 }
-button:hover {
-    background: gold;
-    color: #16213e;
+
+.project-item a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+/* Kontakt */
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact a {
+    color: #00BFFF;
 }
