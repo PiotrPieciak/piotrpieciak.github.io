@@ -1,11 +1,11 @@
 /* Globalne style */
+
 body {
-    font-family: Arial, sans-serif;
-    background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+    background-image: url("images/background.jpg"); /* Ścieżka do pliku */
+    background-size: cover; /* Dopasowanie do ekranu */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ustawienie tła na stałe */
 }
 
 /* Baner */
