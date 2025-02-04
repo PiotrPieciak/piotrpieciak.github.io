@@ -27,17 +27,35 @@ body {
 }
 
 
-
 /* Pasek powitalny */
 .welcome-bar {
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
     padding: 15px;
     color: #FFD700;
-    font-size: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    /* lekkie rozmycie napisu na pasku powitalnym---> text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.5); */
+}
+
+/* ramka "About Me" */
+
+.content-box {
+    background: rgba(0, 0, 0, 0.5); /* Ciemne tło z przezroczystością */
+    padding: 20px;
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Cień dla efektu 3D */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Lekka, półprzezroczysta ramka */
+    color: white;
+    margin: auto;
+    text-align: justify;
+    max-width: 700px; 
+    margin-left: 20px;
 }
 
 /* Sekcja "About Me" */
+
+
 .about {
     display: flex;
     align-items: flex-start;
@@ -53,9 +71,9 @@ body {
 }
 
 .about-text {
-    max-width: 600px;
+    max-width: 700px;
     margin-left: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 .about-text p {
@@ -64,6 +82,7 @@ body {
 
 .about-text h2 {
     color: #FFD700;
+    text-align: center;
 }
 
 .about-text ul {
@@ -86,7 +105,14 @@ body {
 .projects h2 {
     margin: 40px;
     color: #FFD700;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+.projects h1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .project-container {
@@ -106,22 +132,104 @@ body {
 .project img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.project img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .project p {
     padding: 10px;
     word-wrap: break-word; /* Zapobiega wychodzeniu tekstu poza ramkę */
 }
 
 /* Sekcja kontaktu */
-/* Kontakt */
 .contact {
     text-align: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .contact a {
     color: #00BFFF;
 }
+
+.contact h2 {
+    color: #FFD700;
+    text-transform: uppercase;
+}
+
+.contact:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.4s ease-in-out;
+}
+
+/* Sekcja Licznika */
+
+.counter-container {
+    display: flex;
+    justify-content: space-between; /* Rozstawienie liczników */
+    align-items: center;
+    width: 250px; /* Szerokość taka jak zdjęcie */
+    margin: 20px auto; /* Centrowanie */
+}
+
+.counter-box {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 48%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid #ffd700; /* Złota ramka */
+}
+
+
+.counter-box p {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.counter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700; /* Złoty kolor licznika */
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+    display: block;
+    max-width: 250px;
+}
+
+.cta-button:hover {
+    background-color: darkgoldenrod;
+}
+
+/* Nowe próby*/
+.section-divider {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #FFD700;
+    font-size:  40px;
+}
+
+
